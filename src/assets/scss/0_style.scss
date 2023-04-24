@@ -41,5 +41,39 @@ $mainColor2 : #ffde59;
 
 
 @mixin btn {
-
+    color: $mainColor;
+    background-color: $mainColor2;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 15px 10px 40px;
+    position: relative;
+    border: 2px solid transparent;
+    transition: .3s;
+    &::before{
+        content: '';
+        position: absolute;
+        background-image: url(../icons/telephone-fill.svg);
+        width: 20px;
+        height: 20px;
+        left: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    &:hover {
+        background-color: transparent;
+        color: #fff;
+        border: 2px solid $mainColor2;
+        &::before{
+            content: '';
+            position: absolute;
+            background-image: url(../icons/telephone.svg);
+            width: 20px;
+            height: 20px;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
 }

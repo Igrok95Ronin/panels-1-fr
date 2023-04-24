@@ -1,0 +1,57 @@
+.mainFon {
+}
+.mainFon__box {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.mainFon__left {
+    max-width: 100%;
+    max-height: 600px;
+}
+.mainFon__img {
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+}
+.mainFon__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 50px;
+    padding-top: 50px;
+}
+.mainFon__ul {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    li{
+        background-color: $mainColor;
+        padding: 15px 50px;
+        border-radius: 0 10px 10px 0;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            background-color: $mainColor2;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+        }
+    }
+}
+.mainFon__btnW {
+    background-color: $mainColor;
+    padding: 10px 10px;
+    margin-top: 20px;
+    border-radius: 0 10px 10px 0;
+}
+.mainFon__btn {
+    @include btn;
+}  
