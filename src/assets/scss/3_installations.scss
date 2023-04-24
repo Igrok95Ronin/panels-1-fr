@@ -1,0 +1,102 @@
+.installations {
+    padding: 45px 0 0;
+}
+.installations__box {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.installations__left {
+    max-width: 100%;
+    min-height: 400px;
+}
+.installations__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top: 10px solid $mainColor2;
+    border-left: 10px solid $mainColor2;
+    border-bottom: 10px solid $mainColor;
+}
+.installations__right {
+}
+.installations__title {
+    font-size: clamp(24px,5vw,32px);
+    font-weight: 700;
+    color: #fff;
+    background-color: $mainColor;
+    padding: 10px 5px;
+    border-radius: 0 10px 10px 0;
+}
+.installations__txt {
+    margin: 20px 0;
+    line-height: 26px;
+}
+.installations__bottom {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+.installations__bottom-left {
+    background-color: $mainColor;
+    padding: 10px 10px;
+    border-radius: 0 10px 10px 0;
+    width: 100%;
+}
+.installations__bottom-message {
+    color: $mainColor;
+    background-color: $mainColor2;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 15px;
+    position: relative;
+    border: 2px solid transparent;
+    transition: .3s;
+    &:hover {
+        background-color: transparent;
+        color: #fff;
+        border: 2px solid $mainColor2;
+    }
+}
+.installations__bottom-right {
+    background-color: $mainColor;
+    width: 100%;
+    border-radius: 0 10px 10px 0;
+    text-align: center;
+    color: #fff;
+    padding: 5px 0;
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        background-image: url(../img/3.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 80px;
+        height: 80px;
+        left: -10px;
+        top: -50%;
+    }
+}
+.installations__bottom-price {
+    font-size: 20px;
+    position: relative;
+    // text-decoration:line-through;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 70px;
+        height: 2px;
+        background-color: #fff;
+        rotate: -15deg;
+        top: 8px;
+    }
+}
+.installations__bottom-price2 {
+    font-size: 30px;
+    font-weight: 700;
+}
