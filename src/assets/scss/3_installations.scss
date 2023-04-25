@@ -61,6 +61,9 @@
         border: 2px solid $mainColor2;
     }
 }
+.btnTel{
+    @include btn;
+}
 .installations__bottom-right {
     background-color: $mainColor;
     width: 100%;

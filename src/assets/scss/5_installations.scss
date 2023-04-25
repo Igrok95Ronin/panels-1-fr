@@ -1,0 +1,78 @@
+.installation {
+    padding: 45px 0;
+}
+.installation__box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        background-image: url(../img/19.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100px;
+        height: 100px;
+        right: 0;
+        top: -30px;
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        background-image: url(../img/19.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100px;
+        height: 100px;
+        left: 0;
+        bottom: -115px;
+    }
+}
+.installation__left {
+}
+.installation__title {
+    background-color: $mainColor;
+    font-size: clamp(24px,5vw,32px);
+    font-weight: 700;
+    color: $mainColor2;
+    background-color: #00569e;
+    padding: 10px 5px;
+}
+.installation__img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+.installation__right {
+
+}
+.installation__name {
+    font-size: clamp(24px,5vw,32px);
+    font-weight: 700;
+    color: #fff;
+    background-color: #00569e;
+    padding: 10px 5px;
+    border-radius: 0 10px 10px 0;
+    margin-bottom: 20px;
+}
+.installation__ul {
+    font-size: 20px;
+    padding-left: 20px;
+    li{
+        line-height: 30px;
+        list-style: circle;
+        font-weight: 700;
+    }
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        background-image: url(../img/20.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100px;
+        height: 100px;
+        right: 10px;
+    }
+}
