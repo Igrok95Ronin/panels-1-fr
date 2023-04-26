@@ -1,16 +1,16 @@
-.btnFixed {
-    display: none;
+.btnfixed {
+    position: relative;
+}
+.btnfixed__box {
     position: fixed;
-    bottom: 0;
-    width: 100%;
-    padding: 0 1px;
-    margin-bottom: 10px;
+    bottom: 30px;
+    right: 10px;
 }
-.btnFixed__box {
+.btnfixed__btn {
+    background-color: $mainColor2;
+    padding: 15px;
+    border-radius: 50%;
+    border: 2px solid $mainColor;
 }
-.btnFixed__btn {
-    @include btn;
-    width: 100%;
-    text-align: center;
-    padding: 16px 15px;
+.btnfixed__img {
 }

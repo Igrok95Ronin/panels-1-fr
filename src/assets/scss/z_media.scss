@@ -1,0 +1,52 @@
+@media(max-width: 767px) {
+    .mainFon__box,
+    .installations__box,
+    .installation__box{
+        grid-template-columns: 1fr;
+    }
+    .message__box {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    .mainFon__right {
+        flex-direction: column-reverse;
+        padding-top: 0;
+        gap: 20px;
+    }
+    .containerP0{
+        padding: 0;
+    }
+    .solar__bottomFooter {
+        width: 30%;
+    }
+    .solar__btnW {
+        width: 100%;
+        text-align: center;
+    }
+}
+@media(max-width: 600px) {
+    .installations__bottom {
+        flex-direction: column-reverse;
+    }
+    .installations__bottom-left {
+        text-align: center;
+    }
+    .solar__bottomFooter {
+        width: 40%;
+    }
+}
+@media(max-width: 500px) {
+    .mainFon__img {
+        max-height: 400px;
+    }
+    .message__left-top-left-img {
+        width: 80px;
+        height: 80px;
+    }
+    .installation__ul::before {
+        bottom: -75px;
+    }
+    .solar__bottomFooter {
+        width: 50%;
+    }
+}
