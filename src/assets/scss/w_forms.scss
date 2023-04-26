@@ -1,0 +1,19 @@
+.forms {
+    padding: 15px 0;
+}
+.forms__wrapper {
+}
+.forms__box {
+}
+.forms__title {
+    text-align: center;
+    font-size: clamp(24px,5vw,32px);
+    color: $mainColor;
+    font-weight: 700;
+}
+.forms__button {
+    @include btn;
+    &:hover {
+        background-color: $mainColor;
+    }
+}
